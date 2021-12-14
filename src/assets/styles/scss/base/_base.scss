@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 // *, html, body {
@@ -17,4 +17,13 @@ html {
 
 a {
   text-decoration: none;
+}
+
+main {
+  margin-top: 4.8rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

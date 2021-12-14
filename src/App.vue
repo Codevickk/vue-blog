@@ -23,8 +23,22 @@ export default {
 
 @font-face {
   font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Bold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
   src: url("./assets/fonts/SF-Pro-Display-Medium.otf");
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Regular.otf");
+  font-weight: 400;
   font-style: normal;
 }
 

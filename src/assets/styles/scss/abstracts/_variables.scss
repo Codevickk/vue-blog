@@ -1,3 +1,7 @@
+//fonts
+$SFProText: "SF Pro Text", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$SFProDisplay: "SF Pro Display", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
 // Colors
 $primary: #1473e6;
 
@@ -8,20 +12,6 @@ $black: (
   300: #2c2c2c,
   200: #4b4b4b,
   100: #6e6e6e,
-);
-
-// Spacing system
-$spacer: (
-  1: 0.4rem,
-  2: 0.8rem,
-  3: 1.6rem,
-  4: 2.4rem,
-  5: 3.2rem,
-  6: 4.8rem,
-  7: 6.4rem,
-  8: 9.6rem,
-  9: 12.8rem,
-  10: 17.6rem,
 );
 
 // Breakpoints
