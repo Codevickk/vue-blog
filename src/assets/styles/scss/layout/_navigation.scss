@@ -1,0 +1,159 @@
+nav.navbar {
+  position: relative;
+  background: Gray(700);
+  padding: Space(5) 0;
+
+  @include laptop {
+    padding: Space(7) 0;
+  }
+
+  .navbar__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    margin-left: auto;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+
+    @include laptop {
+      display: none;
+    }
+
+    .hamburger__line {
+      height: 3px;
+      width: 2rem;
+      background: white;
+      transform: none;
+      transition: transform 0.2s ease-out;
+
+      &:first-child {
+        transform-origin: top left;
+      }
+
+      &:last-child {
+        transform-origin: bottom left;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: Space(1);
+      }
+    }
+
+    &.hamburger--active {
+      .hamburger__line:first-child {
+        transform: rotate(45deg);
+      }
+
+      .hamburger__line:last-child {
+        transform: rotate(-45deg) translate(-3px, 4px);
+      }
+    }
+  }
+
+  .navbar__menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 8.8rem;
+    background: Gray(600);
+    width: 100%;
+    z-index: 10;
+
+    &.navbar__menu--active {
+      display: block;
+      animation: navbarAnimation 0.2s ease-out;
+      overflow-y: hidden;
+    }
+
+    @include laptop {
+      margin-left: auto;
+      display: block;
+      position: initial;
+      background: initial;
+      width: initial;
+      padding: initial;
+    }
+  }
+
+  .navbar__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: Space(6) 0;
+
+    @include laptop {
+      flex-direction: row;
+      padding: 0;
+    }
+
+    .navbar__listItem {
+      &:hover {
+        .dropdown__content {
+          display: block;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: Space(5);
+      }
+
+      @include laptop {
+        &:not(:last-child) {
+          margin-right: 5.6rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .navbar__link {
+    font-size: 1.6rem;
+    color: Gray(300);
+    letter-spacing: -0.04em;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: Gray(100);
+    }
+  }
+
+  .dropdown {
+    position: relative;
+
+    .dropdown__content {
+      display: none;
+      position: absolute;
+      // top: 3rem;
+      left: 0;
+      width: 80%;
+      background: Gray(700);
+      padding: Space(4);
+      border-radius: 0.2rem;
+
+      @include laptop {
+        width: 300px;
+        padding: Space(5) Space(4);
+      }
+
+      a.navbar__link {
+        display: block;
+
+        &:not(:last-child) {
+          margin-bottom: Space(3);
+        }
+      }
+    }
+  }
+}
+
+@keyframes navbarAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

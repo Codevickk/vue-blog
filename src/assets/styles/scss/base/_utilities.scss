@@ -1,0 +1,41 @@
+// Text alignment
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Grid container
+.container {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 2rem;
+
+  @include mobileM {
+    max-width: 54rem;
+    padding: 0;
+  }
+
+  @include tablet {
+    max-width: 72rem;
+  }
+
+  @include laptop {
+    max-width: 96rem;
+  }
+
+  @include laptopM {
+    max-width: 114rem;
+  }
+  @include laptopL {
+    max-width: 132rem;
+  }
+}

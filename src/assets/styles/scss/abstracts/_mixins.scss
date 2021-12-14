@@ -1,0 +1,30 @@
+// Mixins for media queries
+@mixin laptopL {
+  @media (min-width: #{Breakpoint("laptopL")}) {
+    @content;
+  }
+}
+
+@mixin laptopM {
+  @media (min-width: #{Breakpoint("laptopM")}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{Breakpoint("laptop")}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{Breakpoint("tablet")}) {
+    @content;
+  }
+}
+
+@mixin mobileM {
+  @media (min-width: #{Breakpoint("mobileM")}) {
+    @content;
+  }
+}

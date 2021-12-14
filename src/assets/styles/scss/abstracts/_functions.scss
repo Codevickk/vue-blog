@@ -1,0 +1,14 @@
+// Function to call a color shade
+@function Black($val) {
+  @return map-get($black, $val);
+}
+
+// Function to get space
+@function Space($val) {
+  @return map-get($spacer, $val);
+}
+
+// Function to get breakpoint
+@function Breakpoint($val) {
+  @return map-get($breakpoints, $val);
+}
