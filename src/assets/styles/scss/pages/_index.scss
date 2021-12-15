@@ -2,6 +2,7 @@
   .posts__inner {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    grid-auto-rows: minmax(min-content, max-content);
     grid-gap: 4rem;
   }
 }

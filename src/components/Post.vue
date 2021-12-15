@@ -1,38 +1,36 @@
 <template>
   <div class="card" :class="{ card__block: block }">
     <div class="card__image">
-      <img :src="postImage" />
+      <img
+        v-if="post._embedded['wp:featuredmedia']"
+        :src="post._embedded['wp:featuredmedia'][0].source_url"
+      />
     </div>
 
     <div class="card__content">
       <div class="card__top">
         <p>Front-end</p>
         <div class="seperator"></div>
-        <p class="time">1 Month Ago</p>
+        <p class="time">{{ getDateDiff(post.date) }}</p>
       </div>
       <div class="card__body">
-        <h5 class="card__title">CSS Grids</h5>
-        <p class="card__paragraph">
-          Not long ago I decided to improve the loading times of my website. It
-          already loads pretty fast, but I knew there was still room for
-          improvement and one of them was CSS loading. I will walk you through
-          the process and show you how you can improve your load times as well.
-          To see how CSS affects the load time of a webpage we first have to
-          know how the browser converts an HTML document into a functional
-          webpage...
-        </p>
+        <h5 class="card__title" v-html="post.title.rendered"></h5>
+        <div class="card__paragraph" v-html="post.excerpt.rendered"></div>
       </div>
 
       <div class="card__bottom">
         <div class="card__bottomLeft">12 Min Read</div>
 
         <div class="card__bottomRight">
-        <router-link to="/post" class="link">
+          <router-link
+            :to="{ name: 'SinglePost', params: { id: post.id } }"
+            class="link"
+          >
             <p class="link__text">Read Full</p>
             <div class="link__icon">
               <arrow-right-icon></arrow-right-icon>
             </div>
-        </router-link>
+          </router-link>
         </div>
       </div>
     </div>
@@ -41,6 +39,7 @@
 
 <script>
 import postImage from "../assets/images/large.jpg";
+import { getDateDiff } from "../utils/Date.js";
 import { ArrowRightIcon } from "@zhuowenli/vue-feather-icons";
 
 export default {
@@ -50,10 +49,13 @@ export default {
     };
   },
 
+  methods: {
+    getDateDiff,
+  },
   components: {
     ArrowRightIcon,
   },
 
-  props: ["block"],
+  props: ["block", "post"],
 };
 </script>

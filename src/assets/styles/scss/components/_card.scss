@@ -4,10 +4,10 @@
 
   &.card__block {
     @include laptopM {
-      grid-column: 1/4;
+      grid-column: 1 / -1;
 
       display: grid;
-      grid-template-columns: 5fr 7fr;
+      grid-template-columns: 4fr 8fr;
       grid-auto-rows: min-content;
       grid-column-gap: 1.6rem;
 
@@ -78,6 +78,7 @@
       line-height: 2.1rem;
       color: Black(100);
       font-weight: 400;
+      // height: 10rem;
     }
   }
 

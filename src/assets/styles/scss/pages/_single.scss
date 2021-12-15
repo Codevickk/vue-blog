@@ -20,7 +20,7 @@
 
     .post__author {
       color: Black(200);
-      margin-right: 0.4rem;
+      margin-right: 1rem;
     }
 
     .post__date {
@@ -41,6 +41,29 @@
     line-height: 2.1rem;
     color: Black(100);
     font-weight: 400;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 1.6rem;
+      color: Black(200);
+      
+    }
+
+    p {
+      margin-bottom: 1.6rem;
+    }
+
+    img {
+      margin: 2.4rem 0;
+    }
+
+    a {
+      color: $primary;
+    }
   }
 }
 
