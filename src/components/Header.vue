@@ -4,7 +4,7 @@
       <div class="container">
         <div class="navbar__inner">
           <div class="navbar__brand">
-            <a href="#"><img :src="logo"/></a>
+            <router-link to="/"><img :src="logo"/></router-link>
           </div>
 
           <div class="navbar__menu">
