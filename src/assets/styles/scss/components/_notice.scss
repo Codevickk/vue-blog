@@ -1,0 +1,13 @@
+.notice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 1.6rem;
+
+  &.notice__success {
+    background: rgb(219, 243, 232);
+    color: rgb(0, 139, 74);
+  }
+}

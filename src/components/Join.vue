@@ -33,6 +33,7 @@ export default {
           phone_number: "08102909304",
           name: "Flutterwave Developers",
         },
+        redirect_url: "/",
         callback: function (data) {
           console.log(data);
         },
