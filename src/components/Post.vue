@@ -27,12 +27,12 @@
         <div class="card__bottomLeft">12 Min Read</div>
 
         <div class="card__bottomRight">
-          <a class="link">
+        <router-link to="/post" class="link">
             <p class="link__text">Read Full</p>
             <div class="link__icon">
               <arrow-right-icon></arrow-right-icon>
             </div>
-          </a>
+        </router-link>
         </div>
       </div>
     </div>

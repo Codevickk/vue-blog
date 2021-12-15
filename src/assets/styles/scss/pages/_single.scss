@@ -1,0 +1,63 @@
+.post {
+  margin-top: 6rem;
+
+  .post__inner {
+    max-width: 72.1rem;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+  }
+
+  .post__details {
+    display: flex;
+
+    font-family: $SFProText;
+    font-weight: 500;
+
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+
+    margin-bottom: 1rem;
+
+    .post__author {
+      color: Black(200);
+      margin-right: 0.4rem;
+    }
+
+    .post__date {
+      color: Black(100);
+    }
+  }
+
+  .post__title {
+    font-family: $SFProDisplay;
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+
+  .post__content {
+    font-family: $SFProText;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: Black(100);
+    font-weight: 400;
+  }
+}
+
+.more {
+  margin: 9.9rem 0;
+  .more__title {
+    font-family: $SFProDisplay;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+
+    margin-bottom: 2.3rem;
+  }
+
+  .more__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    grid-gap: 4rem;
+  }
+}

@@ -46,21 +46,21 @@ export default {
 @font-face {
   font-family: "SF Pro Text";
   src: url("./assets/fonts/SF-Pro-Text-Bold.otf");
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SF Pro Medium";
   src: url("./assets/fonts/SF-Pro-Text-Medium.otf");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SF Pro Text";
   src: url("./assets/fonts/SF-Pro-Text-Regular.otf");
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 </style>
