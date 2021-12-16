@@ -17,6 +17,7 @@
       </div>
 
       <Pagination
+      v-if="posts && posts.length > 0"
         :pagination="pagination"
         @prev="
           --postsParams.page;
