@@ -54,5 +54,9 @@
     &:hover {
       background: Black(300);
     }
+
+    &:focus {
+      border: 4px solid Black(100);
+    }
   }
 }

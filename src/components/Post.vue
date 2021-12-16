@@ -19,7 +19,7 @@
       </div>
 
       <div class="card__bottom">
-        <div class="card__bottomLeft">12 Min Read</div>
+        <div class="card__bottomLeft">4 Min Read</div>
 
         <div class="card__bottomRight">
           <router-link

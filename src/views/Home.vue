@@ -1,5 +1,5 @@
 <template>
-  <Notice v-if="message">
+  <Notice v-if="message" :fixedTop="true" status="success">
     <p>{{ message }}</p>
   </Notice>
 

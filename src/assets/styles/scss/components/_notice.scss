@@ -1,13 +1,21 @@
 .notice {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 0;
   font-size: 1.6rem;
+  padding: 2rem 1rem;
 
-  &.notice__success {
+  &.notice--fixedTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &.notice--success {
     background: rgb(219, 243, 232);
     color: rgb(0, 139, 74);
+  }
+
+  &.notice--error {
+    background: rgb(236, 217, 217);
+    color: rgb(163, 2, 2);
   }
 }
