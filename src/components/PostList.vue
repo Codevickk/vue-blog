@@ -81,7 +81,7 @@ export default {
           },
         });
 
-        // console.log(response);
+        console.log(response.data);
 
         this.posts = response.data;
         this.configPagination(response.headers);

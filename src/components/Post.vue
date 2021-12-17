@@ -9,7 +9,7 @@
 
     <div class="card__content">
       <div class="card__top">
-        <p>Front-end</p>
+        <p>{{ post._embedded.author[0].name }}</p>
         <div class="seperator"></div>
         <p class="time">{{ getDateDiff(post.date) }}</p>
       </div>
