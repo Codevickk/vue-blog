@@ -32,9 +32,9 @@ export default {
       this.message = "Your payment was successful, thank you for joining dasdas.";
     }
 
-    // Remove the message after 2 seconds.
+    // Remove the message after 3 seconds.
 
-    setTimeout(() => this.message = '', 2000);
+    setTimeout(() => this.message = '', 3000);
   },
 };
 </script>
